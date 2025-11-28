@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding-top: 60px;
+      }
+      .section-title {
+        border-bottom: 3px solid #007bff;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      .skill-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        padding: 10px;
+        background: #f8f9fa;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+      .skill-item:hover {
+        background: #e9ecef;
+        transform: translateX(5px);
+      }
+      .card{
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover{
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+      .skill-icon {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(45deg, #007bff, #0056b3);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        margin-right: 15px;
+        font-size: 14px;
+      }
+      footer {
+        margin-top: 40px;
+        text-align: right;
+        padding: 20px 0;
+        background-color: #f8f9fa;
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <header class="text-center p-5 mb-5 bg-light w-100">
+      <h1>Hello, I'm Koorada Bhanusundar</h1>
+      <p class="lead">Junior Developer | Full Stack Enthusiast</p>
+    </header>
+
+    <!-- Education Section -->
+    <section id="education" class="mb-5">
+      <h2 class="section-title">Education</h2>
+        <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Master of Computer Application</h5>
+          <p class="card-text">Krishna University, Machilipatnam</p>
+          <p class="card-text"><small class="text-muted">2023 - 2025</small></p>
+        </div>
+      </div>
+    
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Bachelor of Computer Science</h5>
+          <p class="card-text">Sree Maruti Degree College, Tanuku</p>
+          <p class="card-text"><small class="text-muted">2018 - 2021</small></p>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Intermediate M.P.C</h5>
+          <p class="card-text">Sree Maruti Junior College, Tanuku</p>
+          <p class="card-text"><small class="text-muted">2016 - 2018</small></p>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">SSC</h5>
+          <p class="card-text">S.N.P.Z.P High School, Mukkamala</p>
+          <p class="card-text"><small class="text-muted">2015 - 2016</small></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="mb-5">
+      <h2 class="section-title">Experience</h2>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Full Stack Development Short-Term Internship</h5>
+          <p class="card-text">Tech Stack : <small class="text-success">Nodejs, JavaScript , HTML, CSS , Mysql Databases, Github Actions</small></p>
+          <p class="card-text">
+            I completed Netflix homepage, Instagram Authentication page and small project.
+          </p>
+          <p class="card-text"><small class="text-muted">2024</small></p>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Alumni Web Portal</h5>
+          <p class="card-text">Tech Stack : <small class="text-success">Python, Flask, MySQL, HTML, CSS, Bootstrap</small></p>
+          <p class="card-text">
+            Developed a web application for alumni to register,post jobs, request mentorship and participates in events. Created separate Dashboards for Alumni and Students with secure login pages and data handling with Backend Integration.
+          </p>
+          <p class="card-text"><small class="text-muted">2025</small></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="mb-5">
+      <h2 class="section-title">Skills</h2>
+      
+      <!-- Frontend Skills -->
+      <h5 class="mb-3 text-primary">Frontend</h5>
+      <div class="skill-item">
+        <div class="skill-icon">H5</div>
+        <span>HTML5</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">C3</div>
+        <span>CSS3</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">JS</div>
+        <span>JavaScript (ES6+)</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">B</div>
+        <span>Bootstrap 5</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">RN</div>
+        <span>React Native</span>
+      </div>
+
+      <!-- Backend Skills -->
+      <h5 class="mb-3 text-success mt-4">Backend</h5>
+      <div class="skill-item">
+        <div class="skill-icon">🐍</div>
+        <span>Python</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">F</div>
+        <span>Flask</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">D</div>
+        <span>Django</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">NJ</div>
+        <span>Node.js</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">E</div>
+        <span>Express.js</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">J</div>
+        <span>Java</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">S</div>
+        <span>Servlets & JSP</span>
+      </div>
+
+      <!-- Database Skills -->
+      <h5 class="mb-3 text-warning mt-4">Databases</h5>
+      <div class="skill-item">
+        <div class="skill-icon">M</div>
+        <span>MySQL</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">O</div>
+        <span>Oracle</span>
+      </div>
+
+      <!-- Other Skills -->
+      <h5 class="mb-3 text-info mt-4">Tools & Others</h5>
+      <div class="skill-item">
+        <div class="skill-icon">☁️</div>
+        <span>AWS</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">P</div>
+        <span>Postman API Testing</span>
+      </div>
+      <div class="skill-item">
+        <div class="skill-icon">⚡</div>
+        <span>DSA (Data Structures & Algorithms)</span>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Bhanusundar. All rights reserved. </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
